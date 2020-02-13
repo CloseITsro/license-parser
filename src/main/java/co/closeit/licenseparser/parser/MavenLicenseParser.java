@@ -12,14 +12,14 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import lombok.Setter;
-import lombok.extern.log4j.Log4j;
+import lombok.extern.log4j.Log4j2;
 import org.json.XML;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-@Log4j
+@Log4j2
 public class MavenLicenseParser {
     
     private static final String LICENSE_FOLDER = "/licenses/";

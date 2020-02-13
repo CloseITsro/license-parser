@@ -8,14 +8,14 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 import lombok.Setter;
-import lombok.extern.log4j.Log4j;
+import lombok.extern.log4j.Log4j2;
 import org.apache.poi.hssf.usermodel.HSSFCellStyle;
 import org.apache.poi.hssf.usermodel.HSSFFont;
 import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
-@Log4j
+@Log4j2
 public class ExcelWriter {
     
     public static final List<ReplacementTag> DEFAULT_COLUMNS = Arrays.asList(

@@ -9,9 +9,9 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 import lombok.Setter;
-import lombok.extern.log4j.Log4j;
+import lombok.extern.log4j.Log4j2;
 
-@Log4j
+@Log4j2
 public class TextWriter {
     
     public static final String DEFAULT_FORMAT = 

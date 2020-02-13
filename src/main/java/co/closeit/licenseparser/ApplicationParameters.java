@@ -3,9 +3,9 @@ package co.closeit.licenseparser;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
-import lombok.extern.log4j.Log4j;
+import lombok.extern.log4j.Log4j2;
 
-@Log4j
+@Log4j2
 public class ApplicationParameters {
     
     public static final List<ParserParameter> NPM_FILES = Arrays.asList(ParserParameter.NPM_JSON_FILE, ParserParameter.NPM_JSON_FILE_1, ParserParameter.NPM_JSON_FILE_2, ParserParameter.NPM_JSON_FILE_3, ParserParameter.NPM_JSON_FILE_4, ParserParameter.NPM_JSON_FILE_5);

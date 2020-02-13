@@ -15,14 +15,17 @@ import co.closeit.licenseparser.parser.CustomJsonParser;
 import co.closeit.licenseparser.parser.MavenLicenseParser;
 import co.closeit.licenseparser.writer.ExcelWriter;
 import co.closeit.licenseparser.writer.TextWriter;
-import lombok.extern.log4j.Log4j;
-import org.apache.log4j.BasicConfigurator;
+import lombok.extern.log4j.Log4j2;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.core.config.Configurator;
+import org.apache.logging.log4j.core.config.DefaultConfiguration;
 
-@Log4j
+@Log4j2
 public class LicenseParser {
 
     public static void main(String[] args) {
-        BasicConfigurator.configure();
+        Configurator.initialize(new DefaultConfiguration());
+        Configurator.setRootLevel(Level.INFO);
 
         if (args != null && args.length != 0) {
             ApplicationParameters.loadParameters(args);

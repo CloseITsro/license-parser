@@ -7,9 +7,9 @@ import java.io.InputStreamReader;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-import lombok.extern.log4j.Log4j;
+import lombok.extern.log4j.Log4j2;
 
-@Log4j
+@Log4j2
 public enum LicenseType {
     
     AFL("Academic Free License 2.1", "/licenses/AFL2.1.txt", Stream.of("AFLv2.1")),

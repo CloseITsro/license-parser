@@ -8,13 +8,13 @@ import java.io.IOException;
 import java.io.Reader;
 import java.util.Iterator;
 import java.util.List;
-import lombok.extern.log4j.Log4j;
+import lombok.extern.log4j.Log4j2;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-@Log4j
+@Log4j2
 public class CustomJsonParser {
 
     private JSONArray root;
